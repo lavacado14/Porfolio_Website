@@ -1,4 +1,5 @@
-import * as React from 'react';
+// src/Navbar.jsx
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,9 +10,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import logo from './assets/logo.png';
+import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'About Me', 'Projects', 'Services', 'Contact Me']; 
+const pages = ['Home', 'About Me', 'Projects', 'Services', 'Contact Me'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,10 +27,14 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: 'black' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <img
+            src={logo}
+            alt="Logo"
+            style={{ display: { xs: 'none', md: 'flex' }, marginRight: '1rem', height: '40px' }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -44,7 +50,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Maaz's portfolio 
           </Typography>
 
           <Box
@@ -57,6 +63,8 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
+                component={Link}
+                to={page === 'Home' ? '/' : `/${page.toLowerCase().replace(' ', '')}`}
                 onClick={handleCloseNavMenu}
                 sx={{ mx: 2, color: 'white', display: 'block' }}
               >
@@ -95,7 +103,9 @@ function ResponsiveAppBar() {
           >
             {pages.map((page) => (
               <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
+                <Typography component={Link} to={page === 'Home' ? '/' : `/${page.toLowerCase().replace(' ', '')}`} textAlign="center">
+                  {page}
+                </Typography>
               </MenuItem>
             ))}
           </Menu>
