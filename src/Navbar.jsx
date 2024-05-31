@@ -1,4 +1,12 @@
-// src/Navbar.jsx
+/*
+  File: Navbar.jsx
+  Student's Name: Maaz Bobat
+  Student ID: 301360037
+  Date: 5/31/2024
+
+  Description:
+  This file contains the Navbar component, which displays the navigation bar for the website.
+*/
 import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -50,14 +58,14 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            Maaz's portfolio 
+            Maaz's portfolio
           </Typography>
 
           <Box
             sx={{
               flexGrow: 1,
               display: { xs: 'flex', md: 'flex' },
-              justifyContent: 'center', 
+              justifyContent: 'center',
             }}
           >
             {pages.map((page) => (

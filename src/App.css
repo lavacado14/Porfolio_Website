@@ -1,7 +1,14 @@
-
+/*
+  File: App.css
+  Student's Name: Maaz Bobat
+  Student ID: 301360037
+  Date: 5/31/2024
+  Description:
+  All the styling for the entire website. 
+*/
 body {
-    background-color: black;
-    color: white;
+    background-color: grey;
+    color: black;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -16,7 +23,7 @@ body {
 
 .text-box {
     width: 90%;
-    color: #fff;
+    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,7 +38,7 @@ body {
 .text-box p {
     margin: 20px 0 40px;
     font-size: 18px;
-    color: #fff;
+    color: black;
 }
 
 footer {
@@ -58,6 +65,12 @@ footer {
     padding-top: 80px;
     padding-bottom: 50px;
 }
+.about-me img{
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+}
+
 
 .about-col {
     flex-basis: 48%;
@@ -69,5 +82,109 @@ footer {
 }
 
 .about-col p {
+    padding: 20px 0 25px;
+}
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #adcbec;
+}
+.contact-me {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+    
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+    
+}
+.services h1{
+    font-size: 40px;
+}
+
+
+.services-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.services-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services-col p {
+    padding: 0;
+}
+
+.services-col h2 {
+    
+    
+    text-align: left;
+}
+.service-img {
+    width:150px;
+    height: 200px;
+    border: 2px solid black;
+}
+.project-col img {
+   height: 300px;
+   width:500px;
+   border: 2px solid black;
+}
+
+.project {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.project-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.project-col h1 {
+    padding-top: 0;
+    font-size: 40px;
+}
+
+.project-col p {
     padding: 20px 0 25px;
 }
