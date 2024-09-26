@@ -1,8 +1,8 @@
 /*
   File: AboutMe.jsx
-  Student's Name: Maaz Bobat
-  Student ID: 301360037
-  Date: 5/31/2024
+  Student's Name: Jamil Ibrahimi
+  Student ID: 301377159
+  Date: 25/09/2024
 
   Description:
   This file contains the AboutMe component, which displays information me.
@@ -18,8 +18,15 @@ function AboutMe() {
           <div className="row">
             <div className="about-col">
               <h1>ABOUT ME</h1>
-              <p>Hello, my name is Maaz Bobat, a 19-year-old student currently studying Artificial Intelligence - Software Engineering Technology at Centennial College. I'm born and raised in Toronto, and ever since I was a little kid, I've found computers and coding fascinating. In my journey as a student, I'm driven by a deep curiosity to explore the endless possibilities of technology and its potential to solve real-world problems.</p>
-              <p>Feel free to check out my <a href="src/assets/Maaz_Bobat_resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">resume</a></p>
+              <p>I am currently a student in the Software Engineering Technology program
+                at Centennial College, where I am developing strong skills in Java, Python,
+                C#, and web development. I am passionate about using technology to create
+                innovative solutions that improve everyday life. I have experience working
+                on various projects and I am excited to continue growing as a software developer.
+                I am fluent in English, French, Persian, Urdu, and Hindi, which helps me communicate
+                effectively in diverse environments.</p>
+              <p>Don’t hesitate to take a look at my <a href="src/assets/Ibrahimi_Jamil_Resume.pdf"
+                target="_blank" rel="noopener noreferrer" className="resume-button">Resume</a></p>
             </div>
             <div className="about-col">
               <img src="src\assets\aboutme_img2.png" />

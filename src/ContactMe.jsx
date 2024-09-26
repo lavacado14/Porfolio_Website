@@ -1,12 +1,13 @@
 /*
   File: ContactMe.jsx
-  Student's Name: Maaz Bobat
-  Student ID: 301360037
-  Date: 5/31/2024
+  Student's Name: Jamil Ibrahimi
+  Student ID: 301377159
+  Date: 25/09/2024
 
   Description:
   This file contains the ContactMe component, which displays contact information and a form for users to submit messages.
 */
+
 import React from 'react';
 
 function ContactMe() {
@@ -26,8 +27,8 @@ function ContactMe() {
         <div className="row">
           <div className="contact-col">
             <h1>Contact Information: </h1>
-            <p>Name: Maaz Bobat</p>
-            <p>Email: bobatm901@gmail.com</p>
+            <p>Name: Jamil Ibrahimi</p>
+            <p>Email: ibra.jamil14@gmail.com</p>
           </div>
           <div className="contact-col">
             <form onSubmit={handleSubmit}>

@@ -1,8 +1,8 @@
 /*
   File: main.jsx
-  Student's Name: Maaz Bobat
-  Student ID: 301360037
-  Date: 5/31/2024
+  Student's Name: Jamil Ibrahimi
+  Student ID: 301377159
+  Date: 25/09/2024
 
   Description:
   This file is the main entry point of the React application. It configures the routing for different pages and renders the Navbar, Footer, and other components based on the current route.

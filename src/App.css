@@ -1,13 +1,15 @@
 /*
   File: App.css
-  Student's Name: Maaz Bobat
-  Student ID: 301360037
-  Date: 5/31/2024
+  Student's Name: Jamil Ibrahimi
+  Student ID: 301377159
+  Date: 25/09/2024
+  
   Description:
   All the styling for the entire website. 
 */
+
 body {
-    background-color: grey;
+    background-color: rgb(199, 199, 199);
     color: black;
     margin: 0;
     display: flex;
@@ -45,66 +47,112 @@ footer {
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    background-color: black;
-    /* Ensure the footer has the same background color */
-    color: white;
+    background-color: white;
+    color: black;
     margin-top: auto;
-    /* This pushes the footer to the bottom of the page */
     display: flex;
     justify-content: center;
-    /* Center the footer content horizontally */
 }
+
 .row {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
+
 .about-me {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 80%;
+    margin-bottom: 50px;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #d3d3d3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
-.about-me img{
+
+.about-me img {
     width: 250px;
     height: 300px;
-    border: 2px solid black;
+    border: 2px solid gold;
+    margin: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    object-fit: cover;
+    align-self: flex-start;
+    border-radius: 10px;
 }
-
 
 .about-col {
-    flex-basis: 48%;
+    flex-grow: 1;
     padding: 30px 2px;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0px;
 }
+
 .about-col h1 {
     padding-top: 0;
-    font-size: 40px;
+    font-size: 2.5rem;
+    color: gold;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
 }
 
 .about-col p {
-    padding: 20px 0 25px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+    text-align: justify;
+    margin: 0 auto;
+    width: 90%;
 }
+
 .resume-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: black;
-    color: white;
+    background-color: gold;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
 }
 
 .resume-button:hover {
-    background-color: #adcbec;
+    background-color: #f0f0f0;
+    color: gold;
 }
+
 .contact-me {
     width: 80%;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 90px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #d3d3d3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
 
 .contact-col {
     flex-basis: 48%;
     margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: black;
 }
 
 .contact-col div {
@@ -113,78 +161,167 @@ footer {
     margin-bottom: 40px;
 }
 
-    
-
 .contact-col input,
 .contact-col textarea {
     width: 100%;
     padding: 15px;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
     outline: none;
-    border: 1px solid #ccc;
+    border: 2px solid gold;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: black;
 }
+
+.contact-col button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-col button:hover {
+    background-color: #f0f0f0;
+    color: gold;
+}
+
+.contact-me h1 {
+    color: gold;
+}
+
+.contact-col input:focus,
+.contact-col textarea:focus {
+    border-color: #d3d3d3;
+    background-color: white;
+}
+
 .services {
     width: 80%;
     margin: auto;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #d3d3d3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding-top: 50px;
-    
-    
-}
-.services h1{
-    font-size: 40px;
+    font-family: Arial, sans-serif;
 }
 
+.services h1 {
+    font-size: 2.5rem;
+    color: gold;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
 
 .services-col {
     flex-basis: 31%;
+    padding: 30px;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .services-col img {
     width: 100%;
     border-radius: 10px;
+    border: 2px solid gold;
 }
 
 .services-col p {
-    padding: 0;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    color: black;
 }
 
 .services-col h2 {
-    
-    
+    font-size: 1.5rem;
+    color: gold;
+    font-family: Georgia, serif;
+    font-weight: bold;
     text-align: left;
 }
+
 .service-img {
-    width:150px;
+    width: 150px;
     height: 200px;
-    border: 2px solid black;
-}
-.project-col img {
-   height: 300px;
-   width:500px;
-   border: 2px solid black;
+    border: 2px solid gold;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .project {
     width: 80%;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #d3d3d3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
 }
 
 .project-col {
     flex-basis: 48%;
-    padding: 30px 2px;
+    padding: 10px 2px;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
 }
 
 .project-col h1 {
     padding-top: 0;
-    font-size: 40px;
+    font-size: 2.5rem;
+    color: gold;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-align: center;
+
 }
 
 .project-col p {
     padding: 20px 0 25px;
+    margin-top: 5px;
+    text-align: justify;
+    color: black;
+}
+
+.project-col img {
+    height: 300px;
+    width: 500px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-link {
+    text-decoration: none;
+    color: gold;
+    font-family: Georgia, serif;
+}
+
+.project-link h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-link:hover {
+    color: #f0f0f0;
 }

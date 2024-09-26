@@ -1,8 +1,8 @@
 /*
   File: myProjects.jsx
-  Student's Name: Maaz Bobat
-  Student ID: 301360037
-  Date: 5/31/2024
+  Student's Name: Jamil Ibrahimi
+  Student ID: 301377159
+  Date: 25/09/2024
 
   Description:
   This file contains the Projects component, which renders information about the projects. 
@@ -16,56 +16,91 @@ function Projects() {
 
       <div>
         <section className="project">
-
           <div className="row">
             <div className="project-col">
               {/* Project 1 */}
-              <h1>Project 1: Maaz's Interactive Slideshow</h1>
+              <a href="http://studentweb.cencol.ca/aibra126/Project/home.html" target="_blank" class="project-link">
+                <h1>Project 1: Real Estate Agent Website</h1>
+              </a>
               {/* Description of Project 1 */}
-              <p>Description: Developed an interactive slideshow application. My role was to design and implement the JavaScript logic for the slideshow, enabling features such as navigating through images, playing the slideshow automatically, adding comments, and viewing images in full-screen mode.
+              <p>Description: Created a professional website for a real estate agent, designed to showcase property
+                listings, agent profile, client testimonials, and areas served. The site emphasizes affordable and
+                comprehensive housing solutions.
                 <br />
                 <br />
-                Outcome: The project resulted in a user-friendly application that allows users to enjoy and manage their favorite images efficiently.</p>
+                Outcome: Delivered a user-friendly platform that effectively connects potential clients with
+                real estate services, enhancing client engagement and trust.</p>
             </div>
             <div className="project-col">
               {/* Image for Project 1 */}
-              <img src="src\assets\project1.png" />
-
+              <img src="src\assets\project1_img.png" />
             </div>
           </div>
         </section>
+
         <section className="project">
           <div className="row">
             <div className="project-col">
               {/* Project 2 */}
-              <h1>Project 2: Interactive Bug Smasher Game</h1>
+              <a href="http://studentweb.cencol.ca/aibra126/Assignment3_3/Assignment3_3.html" target="_blank" class="project-link">
+                <h1>Project 2: Interactive Bug Smasher Game</h1>
+              </a>
               {/* Description of Project 2 */}
-              <p>Role and Outcome:
-                Designed and implemented the game logic, including the bug's movement, scoring, and interval adjustments.
-                Added reset buttons for speed and score.
-                Introduced additional bugs after one minute of inactivity and a game-ending condition after two minutes.<br></br>
-                Result: An engaging game with increasing difficulty, promoting quick reflexes and providing a dynamic, replayable experience.</p>
+              <p>Role and Outcome: Developed and implemented the core game mechanics, including bug movement,
+                scoring system, and timing adjustments. Integrated reset functionality for both speed and
+                score, introduced additional bugs after one minute of inactivity, and added a game-over
+                condition after two minutes.
+                <br />
+                <br />
+                Result: Created an engaging game with progressively challenging levels, encouraging fast
+                reflexes and offering a dynamic, replayable experience.</p>
             </div>
             <div className="project-col">
               {/* Image for Project 2 */}
               <img src="src\assets\project2_img.png" />
-
             </div>
           </div>
         </section>
-        <section className="project">
 
+        <section className="project">
           <div className="row">
             <div className="project-col">
               {/* Project 3 */}
-              <h1>Project 3: Image gallery using Ajax and Javascript.</h1>
+              <a href="http://studentweb.cencol.ca/aibra126/Assignment2_2/assignment2.html" target="_blank" class="project-link">
+                <h1>Project 3: Interactive Slideshow</h1>
+              </a>
               {/* Description of Project 3 */}
-              <p>Description: My primary focus was on implementing AJAX functionality to enhance the image gallery. Leveraging AJAX, I efficiently fetched image data from a JSON file asynchronously, ensuring seamless loading without page refreshes. This approach not only made the gallery more responsive but also enabled dynamic display of images based on JSON data, including filenames and display durations. Additionally, I implemented a feature allowing users to update the gallery by reloading the image list from the JSON file with a single click. The integration of AJAX significantly improved the gallery's functionality, making it more user-friendly and efficient, ultimately providing a smoother browsing experience for users. </p>
+              <p>Description: Developed an interactive slideshow application. My role was
+                to design and implement the JavaScript logic for the slideshow, enabling
+                features such as navigating through images, playing the slideshow automatically,
+                adding comments, and viewing images in full-screen mode.
+                <br />
+                <br />
+                Outcome: The project delivered a seamless and intuitive experience, allowing users
+                to easily view, manage, and interact with their favorite images.</p>
             </div>
             <div className="project-col">
               {/* Image for Project 3 */}
               <img src="src\assets\project3_img.png" />
+            </div>
+          </div>
+        </section>
 
+        <section className="project">
+          <div className="row">
+            <div className="project-col">
+              {/* Project 4 */}
+              <a href="http://studentweb.cencol.ca/aibra126/Assignment4_4/Assignment4.html" target="_blank" class="project-link">
+                <h1>Project 4: Weather Checker</h1>
+              </a>
+              {/* Description of Project 4 */}
+              <p>Description: Users can input a city name to instantly retrieve weather information,
+                including temperature, weather conditions, humidity, wind speed, and sunrise/sunset
+                times, all displayed in a clear and user-friendly format.</p>
+            </div>
+            <div className="project-col">
+              {/* Image for Project 4 */}
+              <img src="src\assets\project4_img.png" />
             </div>
           </div>
         </section>

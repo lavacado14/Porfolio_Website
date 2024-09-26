@@ -1,12 +1,13 @@
 /*
   File: Navbar.jsx
-  Student's Name: Maaz Bobat
-  Student ID: 301360037
-  Date: 5/31/2024
+  Student's Name: Jamil Ibrahimi
+  Student ID: 301377159
+  Date: 25/09/2024
 
   Description:
   This file contains the Navbar component, which displays the navigation bar for the website.
 */
+
 import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -35,32 +36,41 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'black' }}>
+    <AppBar position="static" sx={{ backgroundColor: 'white' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          {/* Logo */}
           <img
             src={logo}
             alt="Logo"
-            style={{ display: { xs: 'none', md: 'flex' }, marginRight: '1rem', height: '40px' }}
+            style={{
+              display: { xs: 'none', md: 'flex' },
+              marginRight: '1rem',
+              height: '40px'
+            }}
           />
+
+          {/* Title */}
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
+              fontFamily: 'Georgia, serif',
+              fontWeight: 'bold',
+              letterSpacing: '.25rem',
+              fontSize: '1.5rem',
+              color: 'gold',
               textDecoration: 'none',
             }}
           >
-            Maaz's portfolio
+            Jamil's Portfolio
           </Typography>
 
+          {/* Navigation Links for Larger Screens */}
           <Box
             sx={{
               flexGrow: 1,
@@ -74,12 +84,22 @@ function ResponsiveAppBar() {
                 component={Link}
                 to={page === 'Home' ? '/' : `/${page.toLowerCase().replace(' ', '')}`}
                 onClick={handleCloseNavMenu}
-                sx={{ mx: 2, color: 'white', display: 'block' }}
+                sx={{
+                  mx: 2,
+                  color: 'black',
+                  fontSize: '1.1rem',
+                  fontFamily: 'Arial, sans-serif',
+                  fontWeight: '500',
+                  letterSpacing: '.1rem',
+                  display: 'block',
+                }}
               >
                 {page}
               </Button>
             ))}
           </Box>
+
+          {/* Menu Icon for Small Screens */}
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -87,10 +107,12 @@ function ResponsiveAppBar() {
             aria-haspopup="true"
             onClick={handleOpenNavMenu}
             color="inherit"
-            sx={{ display: { xs: 'flex', md: 'none' } }}
+            sx={{ display: { xs: 'flex', md: 'none' }, color: 'gold' }}
           >
             <MenuIcon />
           </IconButton>
+
+          {/* Menu for Small Screens */}
           <Menu
             id="menu-appbar"
             anchorEl={anchorElNav}
@@ -111,7 +133,18 @@ function ResponsiveAppBar() {
           >
             {pages.map((page) => (
               <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography component={Link} to={page === 'Home' ? '/' : `/${page.toLowerCase().replace(' ', '')}`} textAlign="center">
+                <Typography
+                  component={Link}
+                  to={page === 'Home' ? '/' : `/${page.toLowerCase().replace(' ', '')}`}
+                  textAlign="center"
+                  sx={{
+                    color: 'gold',
+                    fontSize: '1.1rem',
+                    fontFamily: 'Arial, sans-serif',
+                    fontWeight: '500',
+                    letterSpacing: '.1rem',
+                  }}
+                >
                   {page}
                 </Typography>
               </MenuItem>
