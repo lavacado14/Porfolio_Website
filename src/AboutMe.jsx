@@ -29,7 +29,7 @@ function AboutMe() {
                 target="_blank" rel="noopener noreferrer" className="resume-button">Resume</a></p>
             </div>
             <div className="about-col">
-              <img src="src\assets\aboutme_img2.png" />
+              <img src="src/assets/aboutme_img2.png" />
             </div>
           </div>
         </section>
